@@ -141,8 +141,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { title: "Пълно грумиране", img: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600" },
-              { title: "Баня & Изсушаване", img: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&q=80&w=600" },
-              { title: "Подстригване & Оформяне", img: "https://images.unsplash.com/photo-1591768793355-74d7c86965b8?auto=format&fit=crop&q=80&w=600" },
+              { title: "Баня & Изсушаване", img: "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&q=80&w=600" },
+              { title: "Подстригване & Оформяне", img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600" },
               { title: "SPA & Допълнителни", img: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600" },
             ].map((service, i) => (
               <motion.div
