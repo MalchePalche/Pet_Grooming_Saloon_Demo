@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@theme {
+  --font-headline: "Noto Serif", "Cormorant Garamond", serif;
+  --font-serif-editorial: "Cormorant Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-surface-dim: #131313;
+  --color-on-surface: #e5e2e1;
+  --color-surface: #131313;
+  --color-secondary: #fcb88a;
+  --color-outline-variant: #4d4637;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-secondary-container: #6c3d1a;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-background: #131313;
+  --color-outline: #99907e;
+  --color-primary: #e6c364;
+  --color-primary-container: #c9a84c;
+  --color-on-primary: #3d2e00;
+  --color-on-background: #e5e2e1;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-primary/30;
+  }
+}
+
+.noto-serif { font-family: 'Noto Serif', serif; }
+.manrope { font-family: 'Manrope', sans-serif; }
+.cormorant { font-family: 'Cormorant Garamond', serif; }
+
+.glass-nav {
+  @apply bg-background/80 backdrop-blur-md;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #e6c364 0%, #c9a84c 100%);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.animate-marquee-left  { animation: marquee-left  45s linear infinite; }
+.animate-marquee-right { animation: marquee-right 38s linear infinite; }
+.pause-on-hover:hover  { animation-play-state: paused; }
