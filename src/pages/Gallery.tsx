@@ -100,9 +100,14 @@ export default function Gallery() {
         <div className="p-12 border border-outline-variant/20 rounded-2xl bg-surface-container-low">
           <h2 className="text-3xl font-headline italic mb-6">Искате да видите повече?</h2>
           <p className="text-on-surface/60 mb-8">Последвайте ни в Instagram за ежедневни дози щастливи кучета и полезни съвети.</p>
-          <button className="border border-primary text-primary px-10 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all duration-300">
-            @vashiyat_biznes
-          </button>
+          <a
+            href="https://www.instagram.com/dogbarberbg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-primary text-primary px-10 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all duration-300"
+          >
+            @dogbarberbg
+          </a>
         </div>
       </section>
     </div>
