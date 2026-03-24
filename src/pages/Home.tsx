@@ -80,10 +80,9 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1000"
+              src="/hero_photo.jpeg"
               alt="Премиум Груминг"
               className="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700"
-              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
           </motion.div>
@@ -140,10 +139,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Пълно грумиране", img: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=600" },
-              { title: "Баня & Изсушаване", img: "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&q=80&w=600" },
-              { title: "Подстригване & Оформяне", img: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&q=80&w=600" },
-              { title: "SPA & Допълнителни", img: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=600" },
+              { title: "Пълно грумиране",        img: "/images/home1.jpg", objPos: "50% 50%" },
+              { title: "Баня & Изсушаване",       img: "/images/home2.jpg", objPos: "85% 50%" },
+              { title: "Подстригване & Оформяне", img: "/images/home3.jpg", objPos: "15% 50%" },
+              { title: "SPA & Допълнителни",      img: "/images/home4.jpg", objPos: "50% 50%" },
             ].map((service, i) => (
               <motion.div
                 key={i}
@@ -158,7 +157,7 @@ export default function Home() {
                   src={service.img}
                   alt={service.title}
                   className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
+                  style={{ objectPosition: service.objPos }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-transparent to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-8 w-full">
@@ -182,7 +181,7 @@ export default function Home() {
           >
             <div className="aspect-square rounded-xl overflow-hidden border-8 border-surface-container-high">
               <img
-                src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=800"
+                src="/images/home5.jpeg"
                 alt="Groomer at work"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

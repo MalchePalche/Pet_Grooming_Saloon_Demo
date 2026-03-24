@@ -11,11 +11,11 @@ const galleryItems = [
   // Баня
   { id: 6,  category: 'Баня', img: 'https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?auto=format&fit=crop&q=80&w=800', title: 'Баня на лабрадор' },
   { id: 11, category: 'Баня', img: 'https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&q=80&w=800', title: 'СПА баня за голдън' },
-  { id: 12, category: 'Баня', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800', title: 'Освежаваща баня за шпиц' },
+  { id: 12, category: 'Баня', img: '/images/gallery8.jpg', title: 'Освежаваща баня за шпиц' },
   { id: 13, category: 'Баня', img: 'https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?auto=format&fit=crop&q=80&w=800', title: 'Дълбоко почистване на ретривър' },
   // Стайлинг
   { id: 5,  category: 'Стайлинг', img: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800', title: 'Стил за фрис булдог' },
-  { id: 14, category: 'Стайлинг', img: 'https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?auto=format&fit=crop&q=80&w=800', title: 'Пухкав стайлинг на шпиц' },
+  { id: 14, category: 'Стайлинг', img: '/images/gallery11.jpg', title: 'Пухкав стайлинг на шпиц' },
   { id: 15, category: 'Стайлинг', img: 'https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800', title: 'Елегантен стайлинг на пудел' },
 ];
 

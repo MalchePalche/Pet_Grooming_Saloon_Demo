@@ -35,10 +35,9 @@ export default function About() {
           transition={{ duration: 1 }}
         >
           <img 
-            src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=2000" 
-            alt="Интериор на луксозен салон" 
+            src="/images/aboutus1.jpg"
+            alt="Интериор на луксозен салон"
             className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] brightness-[0.7]"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </motion.div>
@@ -55,10 +54,9 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1581888227599-779811939961?auto=format&fit=crop&q=80&w=1000" 
-                alt="Founder with dog" 
+                src="/images/aboutus2.jpg"
+                alt="Founder with dog"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                referrerPolicy="no-referrer"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-container rounded-full flex items-center justify-center p-4 text-center border-4 border-surface shadow-xl">
