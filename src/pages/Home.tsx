@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Star, Scissors, Calendar, Heart, CheckCircle, Sparkles, Quote } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const allReviews = [
   { name: "Мария К.",     pet: "Пудел",            stars: 5, text: "Най-доброто място в София! Моят пудел винаги изглежда като за изложба. Вниманието към детайла е изключително." },
@@ -32,6 +32,7 @@ function ReviewCard({ review }: { review: typeof allReviews[0] }) {
 }
 
 export default function Home() {
+  const navigate = useNavigate();
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -151,7 +152,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
-                onClick={() => window.location.href = '/services'}
+                onClick={() => navigate('/services')}
               >
                 <img
                   src={service.img}
