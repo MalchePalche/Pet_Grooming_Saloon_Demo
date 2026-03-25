@@ -35,7 +35,9 @@ export default function Footer() {
           <p className="text-on-surface/60">гр. София, ул. "Любимец" 12</p>
           <p className="text-on-surface/60">Пон - Съб: 09:00 - 19:00</p>
           <div className="flex gap-4 pt-2">
-            <Instagram className="w-5 h-5 text-on-surface/60 hover:text-primary cursor-pointer transition-colors" />
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-5 h-5 text-on-surface/60 hover:text-primary cursor-pointer transition-colors" />
+            </a>
             <Facebook className="w-5 h-5 text-on-surface/60 hover:text-primary cursor-pointer transition-colors" />
           </div>
         </div>

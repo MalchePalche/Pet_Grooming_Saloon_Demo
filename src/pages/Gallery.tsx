@@ -101,12 +101,12 @@ export default function Gallery() {
           <h2 className="text-3xl font-headline italic mb-6">Искате да видите повече?</h2>
           <p className="text-on-surface/60 mb-8">Последвайте ни в Instagram за ежедневни дози щастливи кучета и полезни съвети.</p>
           <a
-            href="https://www.instagram.com/dogbarberbg/"
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-primary text-primary px-10 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all duration-300"
           >
-            @dogbarberbg
+            Instagram
           </a>
         </div>
       </section>
